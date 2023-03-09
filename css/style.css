@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-size: inherit;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    margin: 10px auto;
+    max-width: 1250px;
+}
+
+.menu__title,
+.title {
+    margin: 20px auto 50px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.btn__menu {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.row1,
+.row2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 18px;
+
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    width: 150px;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: cornsilk;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.input__menu {
+    display: none;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.input__text {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+
+    font-size: 35px;
+
+    color: white;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid yellow;
+}
+
+.p__img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.p__text,
+.p__time {
+    width: 100%;
+    margin-left: auto;
+    text-align: end;
+    font-size: 18px;
+    color: greenyellow;
+}
+
+.end__menu {
+    display: none;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn__restart {
+    margin: 20px auto;
+}
+
+@media (max-width: 920px) {
+    .row1,
+    .row2 {
+        display: block;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .btn:hover {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .input__text {
+        height: 35px;
+        font-size: 26px;
+    }
+
+    .p__img {
+        display: none;
+    }
+
+    .p__text,
+    .p__time {
+        width: 100%;
+        margin-left: auto;
+        font-size: 12px;
+    }
+
+    .end__menu {
+        width: 60%;
+    }
+}

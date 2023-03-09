@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard trainer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <h1 class="menu__title container">Клавіатурний тренажер</h1>
+    <h2 class="title container">Оберіть свій рівень!</h2>
+
+    <section class="btn__menu container">
+      <div class="row1">
+        <button class="btn btn__1">Рівень 1</button>
+        <button class="btn btn__2">Рівень 2</button>
+        <button class="btn btn__3">Рівень 3</button>
+        <button class="btn btn__4">Рівень 4</button>
+      </div>
+      <div class="row2">
+        <button class="btn btn__1">Рівень 5</button>
+        <button class="btn btn__2">Рівень 6</button>
+        <button class="btn btn__3">Рівень 7</button>
+        <button class="btn btn__4">Рівень 8</button>
+      </div>
+    </section>
+
+    <section class="input__menu container">
+      <input class="input__text" type="text" disabled />
+      <img class="p__img" src="/img/1.png" alt="1" />
+      <p class="p__text">Залишилося символів: <span></span></p>
+      <p class="p__time">Час: <span></span></p>
+    </section>
+
+    <section class="end__menu container">
+      <p class="end__time">Ваш час: <span></span></p>
+      <button class="btn btn__restart">Спробую ще!</button>
+    </section>
+
+    <script src="js/javaS.js"></script>
+  </body>
+</html>
